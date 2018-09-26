@@ -4,7 +4,7 @@ Trained models for Bicleaner scripts: https://github.com/bitextor/bicleaner
 
 # Usage
 
-Create a "lang" folder inside your sources path:
+Create a "lang" folder inside your Bicleaner sourcecode path:
 
 
 `cd src`
