@@ -1,26 +1,23 @@
 # Bicleaner
 
-Trained models for Bicleaner scripts: https://github.com/bitextor/bicleaner
+Trained classifiers for Bicleaner scripts: https://github.com/bitextor/bicleaner
 
 # Usage
 
-Create a "lang" folder inside your Bicleaner sourcecode path:
+Download the desired language pack (i.e. English-Estonian)
 
-
-`cd src`
-
-`mkdir lang`
-
-Uncompress the desired language pack (i.e. English-Estonian) in the "lang" folder:
+Uncompress it with:
 
 `tar -xzvf en-et.tar.gz`
 
-This will create a folder for the language pack (i.e. en-et), containing the files needed for training and/or classifying:
+This will create a folder for the language pack, containing the files needed for training and/or classifying:
 
-In the given example, the content of this folder is as follows:
+In the given example, the new folder "en-et" will contain the following files:
 
-* dict-en.gz: Probabilistic dictionary for English (needed for training and classifying)
-* dict-et.gz: Probabilistic dictionary for Estonian (needed for training and classifying)
+* dict-en.gz: Probabilistic dictionary for English-Estonian (needed for training and classifying)
+* dict-et.gz: Probabilistic dictionary for Estonian-English (needed for training and classifying)
 * train.en-et: Training corpus  (needed for training)
-* training.en-et.yaml: Training metadata (needed for classifying)
-* en-et.classifier: Classifier for English-Estonian  (needed for classifying)
+* training.en-et.yaml: Training metadata (needed for classifying, generated on training)
+* en-et.classifier: Classifier for English-Estonian  (needed for classifying, generated on training)
+
+Please note that if you need a language pack that is not listed here, you can build it yourself by using [`bicleaner-train`](https://github.com/bitextor/bicleaner)
